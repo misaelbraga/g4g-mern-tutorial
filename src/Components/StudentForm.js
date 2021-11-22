@@ -5,14 +5,14 @@ import { FormGroup, FormControl, Button } from "react-bootstrap";
 
 const StudentForm = (props) => {
 const validationSchema = Yup.object().shape({
-	name: Yup.string().required("Rquired"),
+	name: Yup.string().required("Required"),
 	email: Yup.string()
 	.email("You have enter an invalid email address")
-	.required("Rquired"),
+	.required("Required"),
 	rollno: Yup.number()
 	.positive("Invalid roll number")
 	.integer("Invalid roll number")
-	.required("Rquired"),
+	.required("Required"),
 });
 console.log(props);
 return (
